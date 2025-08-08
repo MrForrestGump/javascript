@@ -17,11 +17,17 @@
     <p>Já me livrei da maldição.</p>
 
     <script>
-        var n1 = Number.parseFloat(prompt('Digite um número:'))
-        var n2 = Number.parseFloat(prompt('Digite outro número:'))
+        //somente number o js decide para  o que converter, int ou float
+        var n1 = Number(prompt('Digite um número:'))
+        var n2 = Number(prompt('Digite outro número:'))
         var s = n1 + n2
-        alert('A soma é: ' + s)
-        //18:18
+        alert(`A soma entre ${n1} e ${n2} é: ${s}`)
+        //parseInt ou parseFloat
+        //converter para string: String(n) ou n.toString()
+        // `` template String, var: ${}
+        // s.lenght não precisa de parêntese pois é um atributo
+        // s.toUpperCase() tudo para maiúsculas
+        // s.toLowerCase() tudo para as minúsculas
     </script>
 </body>
 </html>
