@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #1e1e2e;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+        
+    </style>
+    <title>Primeiro passos com DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usa o <strong>DOM</strong> em JavaScript. </p>
+    <p><strong>DOM</strong> é um acrônimo para Document Object Model - Modelo de Objetos para Documentos</p>
+    
+    <div id="msg" name="mensagem">Clique em mim</div>
+
+    <script>
+        window.document.writeln(window.document.characterSet)//charset do html
+        window.document.writeln(window.navigator.appName)// o nome do navegador
+        window.document.writeln(window.document.URL)//URL do documento
+        document.write('<br/>')
+        
+
+        var p1 = window.document.getElementsByTagName('p')[0]// [0] pega o primeiro parágrado que aparecer
+        var corpo = window.document.body
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        var d1 = window.document.getElementsByName('mensagem')[0]
+        var d3 = window.document.querySelector('div#msg')//utilizando o css, # = id     . = class 
+        
+        window.document.write("Está escrito assim: "+ p1.innerText)//innerText pega o texto escrito dentro da tag
+        //mudando a cor do texto
+        p1.style.color = 'red'
+        corpo.style.background = '#232634'
+        document.write('<br/>')
+
+        document.writeln(p2.innerHTML)//innerHTMl = com as tags filhas, innerText = somente teste
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...' //também funciona para alterar o texto
+        d1.innerText = 'Estou aguardando mais ainda...'
+        d3.style.background = 'red'
+
+    </script>
+</body>
+</html>
