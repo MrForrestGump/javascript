@@ -1,0 +1,8 @@
+Operadores relacionais, lógicos, aritmético
+
+Ordem de precedência: aritmético > relacionais > lógicos
+
+Ordem de precedência dos operadores lógicos: ! > && > ||
+
+Operadores ternários: ? e :
+ex.: teste ? true : false
