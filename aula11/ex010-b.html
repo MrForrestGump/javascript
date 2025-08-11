@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #1e1e2e;
+            color: white;
+            font: normal 12pt Arial;
+        }
+
+        div#res{
+            padding-top: 20px;
+        }
+
+    </style>
+    <title>Imigração</title>
+</head>
+<body>
+    <h1>Imigração</h1>
+    <p>Qual a sua nacionalidade?</p>
+
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="submeter" onclick="verificar()">
+
+    <div id="res"></div>
+
+    <script> 
+        function verificar(){
+            var nac = window.document.getElementById('nacionalidade')
+            nac = nac.value
+            var res = window.document.querySelector('div#res')
+            
+            if (nac.toLowerCase() == 'brasileiro'){
+                res.innerHTML = 'Você é Brasileiro.'
+            }else{
+                res.innerHTML = 'Você é gringo.'
+            }
+
+        }
+    </script>
+</body>
+</html>
