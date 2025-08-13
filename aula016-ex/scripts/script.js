@@ -54,6 +54,8 @@ function adicionar(){
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
+    numtxt.value = '' //esvazia o campo
+    numtxt.focus()    //foca no campo
 }
 
 function descrever(){
