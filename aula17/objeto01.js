@@ -9,4 +9,4 @@ function engordar(p){
     console.log(`agora pesa ${p.peso}Kg`)
 }
 
-engordar(amigo)
+engordar(amigo) 
